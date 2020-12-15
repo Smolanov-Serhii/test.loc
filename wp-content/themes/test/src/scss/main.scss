@@ -37,6 +37,9 @@ a {
   outline: 0!important;
   -webkit-tap-highlight-color: transparent;
 }
+.lock{
+  overflow: hidden;
+}
 
 .block-title {
   font-size: 34px;
@@ -86,7 +89,7 @@ body {
     box-shadow: 0px -6px 105px rgba(0, 0, 0, 0.3);
     position: relative;
   }
-  @media all and (max-width: 375px) {
+  @media all and (max-width: 450px) {
     padding: 0 20px;
     max-height: 50px;
     min-height: 50px;
@@ -94,7 +97,7 @@ body {
 
   .mobile-language {
     display: none;
-    @media all and (max-width: 375px) {
+    @media all and (max-width: 450px) {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -128,7 +131,7 @@ body {
       display: flex;
       flex-direction: column;
     }
-    @media all and (max-width: 375px) {
+    @media all and (max-width: 450px) {
       margin-top: 30px;
       flex-direction: column-reverse;
     }
@@ -137,7 +140,7 @@ body {
   .mobile-contacts {
     padding: 0 30px;
     margin-top: 100px;
-    @media all and (max-width: 375px) {
+    @media all and (max-width: 450px) {
       padding: 0 20px 30px 20px;
       margin-top: 30px;
     }
@@ -154,7 +157,7 @@ body {
         color: #50729C;
       }
 
-      @media all and (max-width: 375px) {
+      @media all and (max-width: 450px) {
         flex-direction: column;
         padding: 18px 0 16px 0;
         border-top: 2px solid rgba(171, 192, 218, .5);
@@ -176,7 +179,7 @@ body {
       padding: 54px 0;
       border-top: 2px solid rgba(171, 192, 218, 0.5);
       border-bottom: 2px solid rgba(171, 192, 218, 0.5);
-      @media all and (max-width: 375px) {
+      @media all and (max-width: 450px) {
         border: none;
         padding: 20px 0 18px 0;
       }
@@ -203,7 +206,7 @@ body {
     height: auto;
     margin-left: 30px;
     cursor: pointer;
-    @media all and (max-width: 375px) {
+    @media all and (max-width: 450px) {
       width: 18px;
       margin-left: 20px;
     }
@@ -211,7 +214,7 @@ body {
     &.active {
       span {
         width: 35px;
-        @media all and (max-width: 375px) {
+        @media all and (max-width: 450px) {
           width: 20px;
         }
 
@@ -249,7 +252,7 @@ body {
         }
       }
     }
-    @media all and (max-width: 375px) {
+    @media all and (max-width: 450px) {
       span {
         height: 2px;
         margin: 3px 0;
@@ -266,7 +269,7 @@ body {
     height: auto;
 
     .custom-logo-link {
-      @media all and (max-width: 375px) {
+      @media all and (max-width: 450px) {
         height: 24px;
         width: auto;
         display: flex;
@@ -281,7 +284,7 @@ body {
     img {
       width: 100%;
       height: auto;
-      @media all and (max-width: 375px) {
+      @media all and (max-width: 450px) {
         height: 100%;
         width: auto;
       }
@@ -316,7 +319,7 @@ body {
         padding: 0 70px;
       }
     }
-    @media all and (max-width: 375px) {
+    @media all and (max-width: 450px) {
       top: 50px;
       height: calc(100vh - 50px);
       padding-top: 0;
@@ -331,7 +334,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      @media all and (max-width: 375px) {
+      @media all and (max-width: 450px) {
         margin-top: 30px;
       }
 
@@ -356,7 +359,7 @@ body {
             background-position: center;
           }
         }
-        @media all and (max-width: 375px) {
+        @media all and (max-width: 450px) {
           padding: 0 20px;
           &:after {
             height: 19px;
@@ -399,7 +402,7 @@ body {
             color: #ABC0DA;
             text-transform: capitalize;
           }
-          @media all and (max-width: 375px) {
+          @media all and (max-width: 450px) {
             font-size: 24px;
             line-height: 200%;
           }
@@ -412,7 +415,7 @@ body {
     display: flex;
     position: relative;
     height: 100%;
-    @media all and (max-width: 375px) {
+    @media all and (max-width: 450px) {
       display: none;
     }
   }
@@ -464,6 +467,9 @@ body {
         left: 50%;
         margin-left: -12px;
         width: 0;
+        @media all and (max-width: 450px) {
+          display: none;
+        }
       }
 
       &:before {
@@ -520,14 +526,15 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      @media all and (max-width: 375px) {
+      @media all and (max-width: 450px) {
         width: 30px;
         height: 30px;
+        align-self: center;
       }
 
       svg {
         display: none;
-        @media all and (max-width: 375px) {
+        @media all and (max-width: 450px) {
           display: block;
         }
       }
@@ -547,7 +554,7 @@ body {
         @media all and (max-width: 768px) {
           padding: 0 23px;
         }
-        @media all and (max-width: 375px) {
+        @media all and (max-width: 450px) {
           display: none;
         }
       }

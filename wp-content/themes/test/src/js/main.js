@@ -17,6 +17,7 @@ $(document).ready(function() {
     if ($('.header__burger').length > 0){
         $( ".header__burger" ).click(function() {
             $(this).toggleClass('active');
+            $('body').toggleClass('lock');
             $('.header__navigate').fadeToggle(300).css('display', 'flex');
         });
     }

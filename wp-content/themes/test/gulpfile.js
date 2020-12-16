@@ -26,7 +26,8 @@ const styleFiles = [
 //Порядок подключения js файлов
 const scriptFiles = [
    './src/js/jquery-3.5.1.js',
-   './src/js/swiper-bundle.js',
+   './src/js/wow.js',
+   // './src/js/swiper-bundle.js',
    './src/js/main.js'
 ]
 

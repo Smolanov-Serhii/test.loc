@@ -16,13 +16,13 @@ get_header();
 ?>
 <div class="top-banner" style="background-image: url(<?php echo the_field('kartinka_dlya_verhnego_banera', 2)?>)">
     <div class="top-banner__content">
-        <div class="top-banner__title">
+        <div class="top-banner__title wow fadeInRightBig" data-wow-duration="0.5s" data-wow-delay="0.3s">
             <?php the_field('zagolovok_v_verhnem_banere', 2)?>
         </div>
-        <div class="top-banner__subtitle">
+        <div class="top-banner__subtitle wow fadeInRightBig" data-wow-duration="0.5s" data-wow-delay="0.7s">
             <?php the_field('podzagolovok_dlya_verhnego_banera', 2)?>
         </div>
-        <div class="top-banner__lnk">
+        <div class="top-banner__lnk wow fadeInUpBig" data-wow-duration="0.5s" data-wow-delay="1s">
             <a href="#">наши сервисы</a>
         </div>
     </div>
@@ -33,7 +33,7 @@ get_header();
     </a>
 </div>
 <div class="services" id="services">
-    <div class="services__header">
+    <div class="services__header wow fadeInUpBig" data-wow-duration="0.5s" data-wow-delay="0.3s">
         <div class="services__sub-title block-sub-title">
             <?php the_field('gagolovok_sekczii_uslugi', 2)?>
         </div>
@@ -62,7 +62,7 @@ get_header();
                 $my_query->the_post();
                 $url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
                 ?>
-                <li class="services__item" style="background-image: url('<?php echo $url ?>')">
+                <li class="services__item wow flipInX" data-wow-duration="0.5s" data-wow-delay="0.3s" style="background-image: url('<?php echo $url ?>')">
                     <div class="services__item-count">
                         <span>
                             <?php echo '0'. $counter;
@@ -94,7 +94,7 @@ get_header();
     </div>
 </div>
 <div class="activity">
-    <div class="services__header">
+    <div class="services__header wow fadeInUpBig" data-wow-duration="0.5s" data-wow-delay="0.3s">
         <div class="services__sub-title block-sub-title">
             <?php the_field('podzagolovok_dlya_sfera_deyatelnosti', 2)?>
         </div>
@@ -115,7 +115,7 @@ get_header();
                 $thumb_id = get_post_thumbnail_id();
                 $my_query->the_post();
                 ?>
-                <li class="activity__item">
+                <li class="activity__item wow bounceIn" data-wow-duration="0.5s" data-wow-delay="0.3s"">
                     <div class="activity__item-img item-img">
                         <img class="item-img__top svg" src="<?php echo the_field('ikonka_verhnyaya')?>" alt="<?php the_title();?>">
                         <img class="item-img__bottom svg" src="<?php echo the_field('ikonka_nizhnyaya')?>" alt="<?php the_title();?>">
